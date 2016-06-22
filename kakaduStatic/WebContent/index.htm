@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+	<head>
+		<title>einkakadunamensnuembrecht - home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="Content-Language" content="de" />
+		<meta name="author" content="JP" />
+		<meta name="KeyWords" content="Homepage, Jochen Peuker" />
+		<meta name="Description" content="Private Webseite" />
+		<link href="css/print.css" rel="stylesheet" type="text/css"
+			media="print" />
+		<link href="css/screen.css" rel="stylesheet" type="text/css"
+			media="screen, projection" />
+		<!--[if lte IE 6]>
+		    	<link rel="stylesheet" href="css/ielte6.css" type="text/css" media="screen" />
+		    <![endif]-->
+	   		  		
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <script type="text/javascript" src="./script/angularRoute.js"></script>
+        <script type="text/javascript" src="./script/TestCtrl.js"></script>
+        <script type="text/javascript" src="./script/UpdateCtrl.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<a class="skip" href="#main">Navigation überspringen</a>
+	
+			<div id="logo">
+				<a href="index.htm">ein Kakadu namens <span>Nümbrecht</span></a>
+			</div>
+	
+			<ul id="menu">
+				<li><a href="#/home">home</a></li>
+				<li><a href="#/diyFx">DIY-FX</a></li>
+				<li><a href="#/music">music</a></li>
+				<li><a href="#/xgolf">xgolf</a></li>
+				<li><a href="#/github">github</a></li>
+				<li><a href="http://einkakadunamensnuembrecht.info/tinc?key=GqYPybA1&start=-1&reverse=1">Gästebuch</a></li>
+				<li><a href="#/impressum">Impressum</a></li>
+			</ul>
+	
+			<dl id="subnav" ng-controller="UpdateCtrl">
+				<dt>Aktuelles</dt>
+				<dd ng-repeat= "update in updates">{{update.date}} <em>{{update.msg}}</em></dd>
+			</dl>
+	
+			<div id="main" ng-view>
+				<!--angular routed content goes here-->
+			</div>
+	
+			<p id="footer"></p>			
+		</div>
+		
+		<div id="counter">
+			<!-- <img src="/tinc?key=FCRJUgka" alt="counter">  -->
+		</div>
+	</body>
+</html>
