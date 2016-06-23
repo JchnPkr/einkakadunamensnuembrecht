@@ -21,7 +21,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
         <script type="text/javascript" src="app/app.routes.js"></script>
         <script type="text/javascript" src="components/xgolf/TestCtrl.js"></script>
-        <script type="text/javascript" src="js/UpdateCtrl.js"></script>
+        <script type="text/javascript" src="components/updates/UpdateCtrl.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -41,10 +41,7 @@
 				<li><a href="#/impressum">Impressum</a></li>
 			</ul>
 	
-			<dl id="subnav" ng-controller="UpdateCtrl">
-				<dt>Aktuelles</dt>
-				<dd ng-repeat= "update in updates">{{update.date}} <em>{{update.msg}}</em></dd>
-			</dl>
+			<div id="updates" ng-include="'components/updates/updates.htm'"></div>
 	
 			<div id="main" ng-view>
 				<!--angular routed content goes here-->
