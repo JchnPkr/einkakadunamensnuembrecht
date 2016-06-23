@@ -8,27 +8,27 @@
 	{
 		$routeProvider.when('/home',
 		{
-			templateUrl : './partials/home.htm'
+			templateUrl : 'components/home.htm'
 		})
 		.when('/diyFx',
 		{
-			templateUrl : './partials/diy-fx.htm'
+			templateUrl : 'components/diy-fx.htm'
 		})
 		.when('/music',
 		{
-			templateUrl : './partials/music.htm'
+			templateUrl : 'components/music.htm'
 		})
 		.when('/github',
 		{
-			templateUrl : './partials/github.htm'
+			templateUrl : 'components/github.htm'
 		})
 		.when('/impressum',
 		{
-			templateUrl : './partials/impressum.htm'
+			templateUrl : 'components/impressum.htm'
 		})
 		.when('/xgolf',
 		{
-		    templateUrl : './partials/xgolf.htm',
+		    templateUrl : 'components/xgolf/xgolf.htm',
 		    controller : 'TestCtrl',
 		})
 		.otherwise(
