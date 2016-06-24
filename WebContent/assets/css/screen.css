@@ -1,20 +1,11 @@
 body {
-	background: url(../img/background1.jpg) 100% 0 no-repeat black;
+	background: url(../img/background1.jpg) 100% 0 black;
 	color: black;
 	margin: 0;
 	padding: 1%;
 	min-width: 550px;
 	font-size: 100.01%;
 	font-family: verdana, arial, sans-serif;
-}
-
-a {
-	color: #0B4D8C;
-	text-decoration: underline;
-}
-
-a:visited {
-	color: purple;
 }
 
 .skip {
@@ -80,6 +71,26 @@ img {
 #footer {
 	clear: both;
 	padding: 0 20px;
+}
+
+#footerMenu {
+	clear: both;
+	padding: 0 20px;
+	text-align: center;
+}
+
+#footerMenu li {
+	font-size: 0.8em;
+	display: inline;
+	list-style-type: none;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	padding: 0 10px 0 15px;
+}
+
+#footerMenu li a {
+	color: white;
+	text-decoration: none;
 }
 
 #logo {
