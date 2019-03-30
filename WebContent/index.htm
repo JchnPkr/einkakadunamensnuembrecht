@@ -11,10 +11,10 @@
 		<meta name="KeyWords" content="Homepage, Jochen Peuker" />
 		<meta name="Description" content="Private Webseite" />
 
-		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" /> 
-		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120-precomposed.png" /> 
+		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120-precomposed.png" />
 		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-152x152-precomposed.png" />
-		
+
 		<link href="assets/css/print.css" rel="stylesheet" type="text/css"
 			media="print" />
 		<link href="assets/css/screen.css" rel="stylesheet" type="text/css"
@@ -22,7 +22,7 @@
 		<!--[if lte IE 6]>
 		    	<link rel="stylesheet" href="css/ielte6.css" type="text/css" media="screen" />
 		    <![endif]-->
-	   		  		
+
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
         <script type="text/javascript" src="app/app.routes.js"></script>
@@ -32,37 +32,33 @@
 	<body>
 		<div id="container">
 			<a class="skip" href="#main">Navigation überspringen</a>
-	
+
 			<div id="logo">
 				<a href="index.htm">ein Kakadu namens <span>Nümbrecht</span></a>
 			</div>
-	
+
 			<ul id="menu">
 				<li><a href="#/home">home</a></li>
 				<li><a href="#/diyFx">DIY-FX</a></li>
 				<li><a href="#/music">music</a></li>
 				<li><a href="#/xgolf">xgolf</a></li>
 				<li><a href="#/github">github</a></li>
-				<li><a href="http://einkakadunamensnuembrecht.info/tinc?key=GqYPybA1&start=-1&reverse=1">Gästebuch</a></li>		
 			</ul>
-	
+
 			<div id="updates" ng-include="'components/updates/updates.htm'"></div>
-	
+
 			<div id="main" ng-view>
 				<!--angular routed content goes here-->
 			</div>
-	
-			<p id="footer"></p>			
+
+			<p id="footer"></p>
 		</div>
-		
+
 		<div>
 			<ul id="footerMenu">
 				<li><a href="#/impressum">Impressum</a></li>
 			</ul>
 		</div>
-		
-		<div id="counter">
-			<img src="/tinc?key=FCRJUgka" alt="counter"> 
-		</div>
+
 	</body>
 </html>
