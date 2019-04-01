@@ -1,0 +1,9 @@
+<h2>Guestbook testpage</h2>
+
+<div ng-controller="CommentCtrl">
+	Say hi or something: <input type="text" ng-model="comment.txt">
+	<button ng-click="addComment()" ng-disabled="!comment.txt">Add</button>
+	<hr>
+	<h2>Latest comments:</h2>
+	<comment-list comments="latestComments"></comment-list>
+</div>
